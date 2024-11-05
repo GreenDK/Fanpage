@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GreenDK</title>
+</head>
+<body>
+
+<header>
+    <h1>GreenDK</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#inicio" onclick="showSection('inicio')">Inicio</a></li>
+        <li><a href="#servicios" onclick="showSection('servicios')">Servicios</a></li>
+        <li><a href="#productos" onclick="showSection('productos')">Productos</a></li>
+        <li><a href="#contacto" onclick="showSection('contacto')">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="content-section" id="inicio" style="display: block;">
+    <h2>Bienvenido a GreenDK</h2>
+    <p>En GreenDK, ofrecemos soluciones de desarrollo web personalizadas para impulsar tu negocio. Nuestra misión es crear experiencias digitales que se adapten a tus necesidades y mejoren la interacción con tus clientes.</p>
+    <p>Estamos aquí para ayudarte a construir un sitio web que no solo sea atractivo, sino también funcional y optimizado para resultados. Desde el diseño hasta la implementación, nuestra prioridad es tu satisfacción.</p>
+</div>
+
+<div class="content-section" id="servicios" style="display: none;">
+    <h2>Servicios</h2>
+    <p>Aquí están los servicios que ofrecemos a nuestros clientes:</p>
+    <ul>
+        <li>
+            <span class="service-title">Desarrollo Web Personalizado:</span><br>
+            <span class="service-description">Creamos sitios web adaptados a tus necesidades específicas, garantizando una experiencia única para tus usuarios.</span>
+        </li>
+        <li>
+            <span class="service-title">Diseño Gráfico:</span><br>
+            <span class="service-description">Proporcionamos servicios de diseño que mejoran la estética y funcionalidad de tu marca.</span>
+        </li>
+        <li>
+            <span class="service-title">Marketing Digital:</span><br>
+            <span class="service-description">Estrategias para aumentar la visibilidad de tu negocio en línea y atraer más clientes.</span>
+        </li>
+        <li>
+            <span class="service-title">Consultoría Tecnológica:</span><br>
+            <span class="service-description">Ofrecemos asesoría para optimizar tus procesos digitales y mejorar tu infraestructura tecnológica.</span>
+        </li>
+    </ul>
+</div>
+
+<div class="content-section" id="productos" style="display: none;">
+    <h2>Productos</h2>
+    <p>Aquí están algunos de nuestros productos destacados:</p>
+    <ul>
+        <li>
+            <span class="product-title">Sitio Web E-Commerce:</span><br>
+            <span class="product-description">Una solución completa para la venta de productos en línea, con un diseño atractivo y funcional.</span>
+        </li>
+        <li>
+            <span class="product-title">Aplicación Móvil:</span><br>
+            <span class="product-description">Desarrollamos aplicaciones móviles que se adaptan a las necesidades de tu negocio y usuarios.</span>
+        </li>
+        <li>
+            <span class="product-title">SEO Avanzado:</span><br>
+            <span class="product-description">Optimización de motores de búsqueda para mejorar la visibilidad y el tráfico de tu sitio web.</span>
+        </li>
+        <li>
+            <span class="product-title">Sistema de Gestión de Contenidos (CMS):</span><br>
+            <span class="product-description">Herramienta que permite a los usuarios crear, editar y gestionar contenido digital de manera sencilla.</span>
+        </li>
+    </ul>
+</div>
+
+<div class="content-section" id="contacto" style="display: none;">
+    <h2>Contacto</h2>
+    <p>Puedes contactarnos a través de los siguientes medios:</p>
+    <p>Email: contacto@greendk.com</p>
+    <p>Teléfono: +1 234 567 890</p>
+    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+    <p>Estamos disponibles de lunes a viernes, de 9:00 a 18:00.</p>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        // Ocultar todas las secciones
+        var sections = document.querySelectorAll('.content-section');
+        sections.forEach(function(section) {
+            section.style.display = 'none';
+        });
+        
+        // Mostrar la sección seleccionada
+        document.getElementById(sectionId).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
